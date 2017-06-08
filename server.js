@@ -1,5 +1,5 @@
 var app = require('./app.js');
 
-app.listen(8080,function(req,res){
-	console.log("listening to port 8080");
+app.listen(app.get('PORT'),function(req,res){
+	console.log("listening to port "+ app.get('PORT'));
 });
